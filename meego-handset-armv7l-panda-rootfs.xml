@@ -1,0 +1,22 @@
+<image>
+  <name>meego-handset-armv7l-panda-rootfs</name>
+  <domain>
+    <boot type='hvm'>
+      <guest>
+        <arch>arm</arch>
+      </guest>
+      <os>
+        <loader dev='hd'/>
+      </os>
+      <drive disk='meego-handset-armv7l-panda-rootfs-mmcblk0p.raw' target='hda'/>
+    </boot>
+    <devices>
+      <vcpu>1</vcpu>
+      <memory>524288</memory>
+      <graphics/>
+    </devices>
+  </domain>
+  <storage>
+    <disk file='meego-handset-armv7l-panda-rootfs-mmcblk0p.raw' use='system' format='raw'/>
+  </storage>
+</image>
